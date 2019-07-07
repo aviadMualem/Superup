@@ -7,12 +7,10 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.PathVariable;
 
 @RestController
-public class SayHelloSuperupController {
-
-    private final InputProcessor process_input = new InputProcessor();
+public class GreetingController {
     @RequestMapping("/api/hello/{name_of_person}")
     public String main_func(@PathVariable(value="name_of_person")  String name) {
-        return process_input.StringToWeb(name); //"Hello " + name;
+        return "Hello man" + name;
     }
 
 }
