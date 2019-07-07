@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 public class GreetingController {
     @RequestMapping("/api/hello/{name_of_person}")
     public String main_func(@PathVariable(value="name_of_person")  String name) {
-        return "Hello " + name;
+        return "special version 1 " + name;
     }
 
 }
